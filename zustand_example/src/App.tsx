@@ -1,11 +1,11 @@
 
 function App() {
 
-  return (
-     <div>
-        text
-     </div>
-  )
+   return (
+      <div className="bg-red-200">
+         Added to Tailwind
+      </div>
+   )
 }
 
 export default App
