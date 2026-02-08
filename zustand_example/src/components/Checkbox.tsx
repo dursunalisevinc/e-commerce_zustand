@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+// import { Check } from "lucide-react";
+import { Check } from "phosphor-react";
 import React from "react";
 
 interface CheckboxProps {
@@ -16,7 +17,10 @@ const Checkbox = ({ checked, onChange }: CheckboxProps) => {
                 className="hidden"
             />
             <div className={`${checked ? "bg-primary-600" : "bg-secondary-50"} h-5 w-5 rounded border border-secondary-100 shadow flex items-center justify-center`}>
-                {checked && <Check color="white" />}
+                {checked && 
+
+             <Check size={32} className="text-white"/>
+                }
             </div>
         </label>
     );
