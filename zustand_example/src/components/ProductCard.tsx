@@ -7,11 +7,11 @@ const ProductCard = () => {
     return (
         <div className='relative flex flex-col bg-primary-100 rounded-2xl shadow bg-gradient-to-r from-slate-200 to-white '>
             <div className='absolute right-[1rem] top-[1rem] flex justify-center items-center rounded-full h-[2.2rem] w-[2.2rem] bg-white shadow'>
-                <HeartStraight size={22} weight="fill" className='text-primary-600' />
+                <HeartStraight size={22} weight="fill" />
             </div>
-                            
+
             <div className="grow flex items-center justify-center rounded-t-2xl">
-        <img src="img/t-shirt.png" alt="Ayakkabı" className='h-[15rem]' />
+                <img src="img/t-shirt.png" alt="Ayakkabı" className='h-[15rem]' />
             </div>
 
             <div className='flex flex-col gap-2 relative rounded-2xl bg-white border border-slate-200 p-[1.2rem]'>
@@ -21,11 +21,11 @@ const ProductCard = () => {
                 <div className='font-bold capitalize text-center'>Lorem ipsum dolor sit amet.</div>
                 <div className='text-xs text-secondary-400'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui alias ab sapiente?</div>
                 <div className='flex justify-center'>
-                    <span className='flex items-center gap-2 border-2 border-primary-500 text-primary-500 px-4 py-1 rounded-full font-semibold'> 
+                    <span className='flex items-center gap-2 border-2 border-primary-500 text-primary-500 px-4 py-1 rounded-full font-semibold'>
                         <Coins size={18} weight="fill" />
-                         300.00₺ </span>
-                    </div>
-                
+                        300.00₺ </span>
+                </div>
+
             </div>
         </div>
     )
