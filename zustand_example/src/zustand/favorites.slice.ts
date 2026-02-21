@@ -6,9 +6,12 @@ export interface FavoriteSlice {
 }
 
 export const createFavoriteSlice: StateCreator<FavoriteSlice> = (set) => ({
-  favArr: [1,2],
+  favArr: [1, 2],
   selectFavorites: (id) =>
     set((state) => ({
-      favArr: [...state.favArr, id],
+      favArr:
+        state.favArr.includes(id)
+          ? state.favArr.filter((favId) => favId !== id)
+          : [...state.favArr, id]
     })),
 })
